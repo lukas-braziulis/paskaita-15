@@ -4,7 +4,7 @@ body {
 
 .logo {
   max-width: 50%;
-  height: 3rem;
+  /* height: 3rem; */
 }
 
 nav {
@@ -145,4 +145,85 @@ footer {
 
 footer p {
   text-transform: uppercase;
+}
+
+@media only screen and (min-width: 768px) {
+  .dropdown {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-grow: 2;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    padding-right: 7px;
+    text-decoration: none;
+    color: #2b2e34;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  .logo {
+    width: 20%;
+    flex-grow: 1;
+  }
+
+  header {
+    display: flex;
+    justify-self: flex-end;
+  }
+
+  main {
+    display: grid;
+    padding: 100px 40px;
+    grid-template-columns: 1fr 1fr 2fr;
+    justify-content: center;
+  }
+
+  #red-date-text {
+    margin-top: 0px;
+  }
+
+  main section:nth-child(2) {
+    align-self: center;
+  }
+
+  .botom-section {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-start;
+  }
+
+  .botom-section img {
+    max-width: 15rem;
+    padding-right: 50px;
+  }
+
+  .botom-section div {
+    margin-left: auto;
+  }
+
+  footer div a {
+    display: inline;
+    text-align: center;
+    padding-left: 100px;
+  }
+
+  footer p,
+  footer div {
+    display: inline;
+  }
+
+  footer {
+    padding: 15px 0;
+    padding-left: 15px;
+  }
 }
